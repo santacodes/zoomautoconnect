@@ -36,10 +36,8 @@ while True:
     time_now = str(current_time)
     strip_time = time_now.split(':')
     print(strip_time)
-    if (strip_time[0] == '02') and (strip_time[1] == '18'):
-        zoom = Zoom('266 170 7900','8PU492') 
-        #zoom.openzoom()
-        #time.sleep(10)
+    if (strip_time[0] == 'HH') and (strip_time[1] == 'MM'):
+        zoom = Zoom('ID','PASSWORD') 
         zoom.join_meeting()
         break 
 
