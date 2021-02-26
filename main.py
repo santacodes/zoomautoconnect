@@ -11,18 +11,18 @@ class Zoom():
         self.pwd = pwd
     
     def join_meeting(self):
-        join = pag.locateCenterOnScreen('join.png')
+        join = pag.locateCenterOnScreen('Images/join.png')
         pag.click(join)
         time.sleep(2)
-        meeting_id_bar = pag.locateCenterOnScreen('meeting_id.png')
+        meeting_id_bar = pag.locateCenterOnScreen('Images/meeting_id.png')
         pag.click(meeting_id_bar)
         pag.write(str(self.mid))
         time.sleep(1)
-        join_button = pag.locateCenterOnScreen('join_button.png')
+        join_button = pag.locateCenterOnScreen('Images/join_button.png')
         time.sleep(1)
         pag.press('enter')
         pag.click(join_button)
-        pwd_bar = pag.locateCenterOnScreen('pwd.png')
+        pwd_bar = pag.locateCenterOnScreen('Images/pwd.png')
         time.sleep(10)
         pag.click(pwd_bar)
         time.sleep(1)
